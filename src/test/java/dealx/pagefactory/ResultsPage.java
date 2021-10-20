@@ -32,7 +32,6 @@ public class ResultsPage extends HomePage {
         return searchResultList;
     }
 
-    // TODO: Get the elements of that popup so that we can click proceed (while I finish this meeting)
     public WebElement getMatchingItemByText(String targetItem) {
         for (WebElement element : searchResultList) {
             String elementText = element.findElement(By.xpath("div/div[2]/h5/a")).getText();
